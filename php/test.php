@@ -13,6 +13,7 @@
 	/*$students = [
 		[1, "alamin", 2.5],
 		[2, "alamin", 2.5],
+	
 		[3, "alamin", 2.5]
 	];
 	$students = [
@@ -22,9 +23,9 @@
 	];*/
 
 	$students = [
-		's1'=>['id'=>1, 'name'=>'alamin', 'cgpa'=>.5],
-		's2'=>['id'=>2, 'name'=>'alamin', 'cgpa'=>.5],
-		's3'=>['id'=>3, 'name'=>'alamin', 'cgpa'=>.5]
+		's1'=>['id'=>1, 'name'=>'nayeem', 'cgpa'=>3.32],
+		's2'=>['id'=>2, 'name'=>'nayeem', 'cgpa'=>3.35],
+		's3'=>['id'=>3, 'name'=>'nayeem', 'cgpa'=>3.5]
 	];
 
 	//print($students['s3']['cgpa']); 
