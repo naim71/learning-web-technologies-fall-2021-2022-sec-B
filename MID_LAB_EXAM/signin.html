@@ -4,31 +4,29 @@
 <title>Login Page</title>
 </head>
 <body>
-<form method="post" action="../controller/logCheck.php">
+<form>
 <fieldset>
 <legend>Login</legend>
 <table>
-<tr>
-<td>User Id</td>
-
- </tr>
-<tr>
-<td><input type="text" name="id" value=""> </td>
-</tr>
-<tr>
-<td>Password</td>
-
- </tr>
-<tr>
-<td><input type="password" name="password" value=""> </td>
-</tr>
-<tr>
-
- <td>
-<input type="submit" name="submit" value="Login">
-<a href="registration.html">Register</a>
-</td>
-</tr>
+   <?php if(isset($msg)){?>
+    <tr>
+      <td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
+    </tr>
+    <?php } ?>
+    <tr>
+	 <label for="id">User Id</label><br>
+ 	 <input name="Username" type="text" class="Input"><br>
+    </tr> 
+    <tr>
+ 	 <label for="pass">Password</label><br>
+ 	 <input name="Password" type="password" class="Input"><br>
+     </tr> 
+     <tr>
+      <td>
+      	<button onclick="document.location='adminpage.html'">Login</button>
+      	<a href="registration.html">Register</a></td>
+    </tr>
+  </table>
 </table>
 </fieldset>
 </form>
